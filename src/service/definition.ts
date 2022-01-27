@@ -1,6 +1,6 @@
 import 'isomorphic-fetch';
 
-export const fetchDefinitions = async (word) => {
+export const fetchDefinitions = async (word: string) : Promise<any> => {
     const options = {
         method: 'GET',
         headers: {
